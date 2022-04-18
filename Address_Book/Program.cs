@@ -4,15 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Address_Book
+namespace AddressBook
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Address Book System");
-            ContactsRecord record = new ContactsRecord(); // Creating object of ContactRecord class
-            record.Input(); // Calling a Input Method of ContactRecord Class
+            AddressBook records = new AddressBook(); // Creating a object of AddressBook class
+            Console.WriteLine("1. Add a new Record");
+            Console.WriteLine("Enter your choice : ");
+            int ch = Convert.ToInt32(Console.ReadLine()); // Storing a user choice in variable
+            switch (ch) // 
+            {
+                case 1:
+                    records.AddRecords(); // Calling a method of AddressBook class to add record in address book
+                    records.PrintRecords(); // Calling a method of AddressBook class to display records of address book
+                    Console.ReadLine();
+                    break;
+            }
         }
     }
 }
