@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AddressBook
+namespace AddressBookSystem
 {
     internal class PersonInput
     {
-
         // Declaring class variable to get the all the details from user
         public string fName { get; set; }
         public string lName { get; set; }
@@ -18,6 +17,7 @@ namespace AddressBook
         public string email { get; set; }
         public int zip { get; set; }
         public long phoneNumber { get; set; }
-    }
-}
 
+    }
+
+}
